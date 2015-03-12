@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
 
-        <title>Ge's Blog - Pelican</title>
+        <title>使用Pelican与Github Pages搭建博客</title>
         <meta charset="utf-8" />
 
 
@@ -41,24 +41,28 @@
               </ul>
             </div>
 
-<section id="content">
-
-
+<section id="content" class="body">
 
    <div class="row">
-
-
         <div class="eleven columns">
-                 <ol id="post-list">
-                        <li><article class="hentry">
-                                <header> <h2 class="entry-title"><a href="/generate-blog-with-pelican.html" rel="bookmark" title="Permalink to 使用Pelican与Github Pages搭建博客">使用Pelican与Github Pages搭建博客</a></h2> </header>
-                                <footer class="post-info">
-                                    <abbr class="published" title="2015-03-12T14:29:00+01:00"> 四 12 三月 2015 </abbr>
-                                    <address class="vcard author">By 
-                                    <a class="url fn" href="/author/gc.html"> Gc</a>
-                                    </address>
-                                </footer><!-- /.post-info -->
-                                <div class="entry-content"> <hr />
+
+
+            <header>
+              <h2 class="entry-title">
+                <a href="/generate-blog-with-pelican.html" rel="bookmark"
+                   title="Permalink to 使用Pelican与Github Pages搭建博客">使用Pelican与Github Pages搭建博客</a></h2>
+           
+            </header>
+            <footer class="post-info">
+              <abbr class="published" title="2015-03-12T14:29:00+01:00">
+                四 12 三月 2015
+              </abbr>
+              <address class="vcard author">By 
+                <a class="url fn" href="/author/gc.html"> Gc</a>
+              </address>
+            </footer><!-- /.post-info -->
+            <div class="entry-content">
+              <hr />
 <h2>1.前言</h2>
 <hr />
 <p><strong>Pelican是一个由Python编写的静态页面生成器。</strong></p>
@@ -96,25 +100,79 @@ cd blog
 
 
 <p>执行<code>pelican-quickstart</code>命令，将会提示博客的配置项，就算手抖选错，也可在<code>pelicanconf.py</code>文件中进行修改。</p>
-<p>命令执行后，出现pelican框架 ...</p> </div><!-- /.entry-content -->
-
-                                <div class="medium primary btn"><a href="/generate-blog-with-pelican.html" rel="bookmark" title="Permalink to 使用Pelican与Github Pages搭建博客">Read more <i class="icon-arrow-right"></i></a></div>
-
-
-
-                                <div class="row tag-row">
-                                        <span>Tagged as : </span>
-                                            <a class="danger label" href="/tag/pelican.html">Pelican</a>
-                                            <a class="danger label" href="/tag/python-blog-framework.html">Python blog framework</a>
-                                </div>
-
+<p>命令执行后，出现pelican框架，如下所示： </p>
+<div class="highlight"><pre>blog/
+├── content                # 存放输入的markdown或RST源文件
+│   └── (pages)            # 存放手工创建的静态页面，可选
+├── output                 # 存放最终生成的静态博客
+├── develop_server.sh      # 测试服务器
+├── Makefile               # 管理博客的Makefile
+├── pelicanconf.py         # 配置文件
+└── publishconf.py         # 发布文件，可删除
+</pre></div>
 
 
-                        </article></li>
-                </ol><!-- /#posts-list -->
+<h2>4.写博文</h2>
+<hr />
+<p>博主使用的Mou创建<code>.md</code>，保存在<code>content</code>文件夹中。</p>
+<blockquote>
+<p>源文件头部Title、Date、Category是必须写的</p>
+</blockquote>
+<div class="highlight"><pre>Title: 文章标题
+Date: 创建日期
+Modified: 修改日期
+Category: 文章分类，标志本文处于该分类下
+Tags: 文章标签，标志本文处于该标签下
+Slug: URL中该文章的链接地址
+Author: 作者
+</pre></div>
+
+
+<p>写完markdown文件后，回到<code>blog</code>目录下。
+执行<code>make html</code>命令生成博客（<code>make html</code>命令把刚写的博文生成html，并放到<code>output</code>目录下）</p>
+<p>执行<code>make serve</code>命令，在浏览器中输入<code>http://localhost:8000</code>即可看到博文效果。</p>
+<h2>5.主题</h2>
+<hr />
+<p>下载<a href="https://github.com/getpelican/pelican-themes">Pelican主题库</a></p>
+<div class="highlight"><pre>git clone https://github.com/getpelican/pelican-themes.git
+</pre></div>
+
+
+<p>打开<code>pelicanconf.py</code>配置文件，添加主题(本博客使用主题为<em>gum</em>)</p>
+<div class="highlight"><pre>THEME = &#39;pelican-themes/gum&#39;
+</pre></div>
+
+
+<h2>6.预览你的博客</h2>
+<hr />
+<p>新开一个命令行界面，运行下面的命令，将使用Python内建的服务器进行浏览：</p>
+<div class="highlight"><pre>cd ~/projects/yoursite/output
+python -m SimpleHTTPServer
+</pre></div>
+
+
+<p>在浏览器输入<a href="http://localhost:8000">http://localhost:8000</a>进行预览   </p>
+<h2>7.发布</h2>
+<hr />
+<blockquote>
+<p>行百里者半九十。</p>
+</blockquote>
+<p>进入<code>output</code>目录下，执行以下命令。</p>
+<div class="highlight"><pre>git init
+git add .
+git remote add origin https://github.com/Gnahceg/Gnahceg.github.io
+git pull origin master
+git commit -m &quot;First Blog&quot;
+git push origin master
+</pre></div>
+
+
+<p>最后，访问<a href="http://gnahceg.github.io">http://gnahceg.github.io</a>即可。</p>
+            </div><!-- /.entry-content -->
+
 
         </div><!-- /.eleven.columns -->
-        
+
 <div class="three columns">
 
 <h4>Pages</h4>
@@ -145,7 +203,8 @@ cd blog
 
 </div> </div><!-- /.row -->
 
-</section><!-- /#content -->
+
+</section>
 
        </div><!-- /.row -->
     </div><!-- /.container -->

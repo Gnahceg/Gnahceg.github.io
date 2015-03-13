@@ -55,7 +55,7 @@
            
             </header>
             <footer class="post-info">
-              <abbr class="published" title="2015-03-12T14:29:00+01:00">
+              <abbr class="published" title="2015-03-12T14:29:00+08:00">
                 四 12 三月 2015
               </abbr>
               <address class="vcard author">By 
@@ -63,24 +63,21 @@
               </address>
             </footer><!-- /.post-info -->
             <div class="entry-content">
-              <hr />
-<h2>1.前言</h2>
-<hr />
+              <h2>1.前言</h2>
 <p><strong>Pelican是一个由Python编写的静态页面生成器。</strong></p>
 <p>官方网站:<a href="http://blog.getpelican.com/"><em>Pelican</em></a></p>
-<h5>特点</h5>
+<h3>特点</h3>
 <div class="highlight"><pre>* 易部署
 * 可用reStructuredText、Markdown等格式进行编写。
 * 使用命令行界面生成页面
 </pre></div>
 
 
-<h5>为啥叫“Pelican”？</h5>
+<h3>为啥叫“Pelican”？</h3>
 <blockquote>
 <p>Pelican是<em>calepin</em>(在法语中意为“笔记本”)的同字母异序词。</p>
 </blockquote>
 <h2>2.下载安装</h2>
-<hr />
 <blockquote>
 <p>git</p>
 <p>Python</p>
@@ -93,7 +90,6 @@
 <li>安装Markdown <code>pip install markdown</code></li>
 </ol>
 <h2>3.搭建</h2>
-<hr />
 <p>创建文件夹</p>
 <div class="highlight"><pre>mkdir blog
 cd blog
@@ -114,7 +110,6 @@ cd blog
 
 
 <h2>4.写博文</h2>
-<hr />
 <p>博主使用的Mou创建<code>.md</code>，保存在<code>content</code>文件夹中。</p>
 <blockquote>
 <p>源文件头部Title、Date、Category是必须写的</p>
@@ -133,7 +128,6 @@ Author: 作者
 执行<code>make html</code>命令生成博客（<code>make html</code>命令把刚写的博文生成html，并放到<code>output</code>目录下）</p>
 <p>执行<code>make serve</code>命令，在浏览器中输入<code>http://localhost:8000</code>即可看到博文效果。</p>
 <h2>5.主题</h2>
-<hr />
 <p>下载<a href="https://github.com/getpelican/pelican-themes">Pelican主题库</a></p>
 <div class="highlight"><pre>git clone https://github.com/getpelican/pelican-themes.git
 </pre></div>
@@ -145,7 +139,6 @@ Author: 作者
 
 
 <h2>6.预览你的博客</h2>
-<hr />
 <p>新开一个命令行界面，运行下面的命令，将使用Python内建的服务器进行浏览：</p>
 <div class="highlight"><pre>cd ~/projects/yoursite/output
 python -m SimpleHTTPServer
@@ -154,7 +147,6 @@ python -m SimpleHTTPServer
 
 <p>在浏览器输入<a href="http://localhost:8000">http://localhost:8000</a>进行预览   </p>
 <h2>7.发布</h2>
-<hr />
 <blockquote>
 <p>行百里者半九十。</p>
 </blockquote>
@@ -170,6 +162,18 @@ git push origin master
 
 <p>最后，访问<a href="http://gnahceg.github.io">http://gnahceg.github.io</a>即可。</p>
             </div><!-- /.entry-content -->
+            <div class="comments">
+              <h3>Comments</h3>
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+                var disqus_identifier = "generate-blog-with-pelican.html";
+                (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://gnahceggithubio.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+              </script>
+            </div>
 
 
         </div><!-- /.eleven.columns -->
@@ -184,6 +188,7 @@ git push origin master
 
 <h4>Categories</h4>
 <ul>
+		<li><a href="/category/macintosh.html">Macintosh</a></li>
 		<li><a href="/category/python.html">Python</a></li>
 </ul>
 
@@ -192,6 +197,7 @@ git push origin master
 	<ul>
 	    <li class="tag-4"><a href="/tag/python-blog-framework.html">Python blog framework</a></li>
 	    <li class="tag-4"><a href="/tag/pelican.html">Pelican</a></li>
+	    <li class="tag-4"><a href="/tag/mac.html">mac</a></li>
 </ul>
 
 
@@ -243,6 +249,15 @@ git push origin master
     </div>
 
 
+<script type="text/javascript">
+    var disqus_shortname = 'gnahceggithubio';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
   <script src="/theme/js/libs/jquery-1.9.1.min.js"></script>
   <script src="/theme/js/libs/gumby.min.js"></script>
   <script src="/theme/js/plugins.js"></script>

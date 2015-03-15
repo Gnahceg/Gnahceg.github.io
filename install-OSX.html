@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
 
-        <title>Ge's Blog</title>
+        <title>装配 mac 小记</title>
         <meta charset="utf-8" />
 
 
@@ -42,24 +42,28 @@
               </ul>
             </div>
 
-<section id="content">
-
-
+<section id="content" class="body">
 
    <div class="row">
-
-
         <div class="eleven columns">
-                 <ol id="post-list">
-                        <li><article class="hentry">
-                                <header> <h2 class="entry-title"><a href="/install-OSX.html" rel="bookmark" title="Permalink to 装配 mac 小记">装配 mac 小记</a></h2> </header>
-                                <footer class="post-info">
-                                    <abbr class="published" title="2015-03-12T19:29:00+08:00"> 四 12 三月 2015 </abbr>
-                                    <address class="vcard author">By 
-                                    <a class="url fn" href="/author/gc.html"> Gc</a>
-                                    </address>
-                                </footer><!-- /.post-info -->
-                                <div class="entry-content"> <h1>触控板</h1>
+
+
+            <header>
+              <h2 class="entry-title">
+                <a href="/install-OSX.html" rel="bookmark"
+                   title="Permalink to 装配 mac 小记">装配 mac 小记</a></h2>
+           
+            </header>
+            <footer class="post-info">
+              <abbr class="published" title="2015-03-12T19:29:00+08:00">
+                四 12 三月 2015
+              </abbr>
+              <address class="vcard author">By 
+                <a class="url fn" href="/author/gc.html"> Gc</a>
+              </address>
+            </footer><!-- /.post-info -->
+            <div class="entry-content">
+              <h1>触控板</h1>
 <p>最先学会使用的便是触控板，在<strong><em>系统偏好设置</em></strong>里的触控板设置里，有详细的教程。</p>
 <h1>码畜神器---Alfred</h1>
 <p>安装与简介，可移步<a href="http://www.zhihu.com/question/20656680">借助 Alfred 2 的 Workflows 功能可以做哪些好玩的事情？</a>。<br />
@@ -80,81 +84,26 @@ Github上有一个<a href="https://github.com/hzlzh/AlfredWorkflow.com">AlfredWo
 <h1>Tips</h1>
 <ol>
 <li>使用触发角来锁屏  <img alt="image" src="http://ww1.sinaimg.cn/large/66cfe5a5gw1eq6py4ertjj211a0e240w.jpg" /></li>
-<li>Macintosh自带发音功能，进入Terminal ...</li></ol> </div><!-- /.entry-content -->
-
-                                <div class="medium primary btn"><a href="/install-OSX.html" rel="bookmark" title="Permalink to 装配 mac 小记">Read more <i class="icon-arrow-right"></i></a></div>
-
-
-
-                                <div class="row tag-row">
-                                        <span>Tagged as : </span>
-                                            <a class="danger label" href="/tag/mac.html">mac</a>
-                                </div>
-
-
-
-                        </article></li>
-                        <li><article class="hentry">
-                                <header> <h2 class="entry-title"><a href="/generate-blog-with-pelican.html" rel="bookmark" title="Permalink to 使用Pelican与Github Pages搭建博客">使用Pelican与Github Pages搭建博客</a></h2> </header>
-                                <footer class="post-info">
-                                    <abbr class="published" title="2015-03-12T14:29:00+08:00"> 四 12 三月 2015 </abbr>
-                                    <address class="vcard author">By 
-                                    <a class="url fn" href="/author/gc.html"> Gc</a>
-                                    </address>
-                                </footer><!-- /.post-info -->
-                                <div class="entry-content"> <h2>1.前言</h2>
-<p><strong>Pelican是一个由Python编写的静态页面生成器。</strong></p>
-<p>官方网站:<a href="http://blog.getpelican.com/"><em>Pelican</em></a></p>
-<h3>特点</h3>
-<div class="highlight"><pre>* 易部署
-* 可用reStructuredText、Markdown等格式进行编写。
-* 使用命令行界面生成页面
-</pre></div>
-
-
-<h3>为啥叫“Pelican”？</h3>
-<blockquote>
-<p>Pelican是<em>calepin</em>(在法语中意为“笔记本”)的同字母异序词。</p>
-</blockquote>
-<h2>2.下载安装</h2>
-<blockquote>
-<p>git</p>
-<p>Python</p>
-<p>pip</p>
-<p>Pelican</p>
-<p>markdown</p>
-</blockquote>
-<ol>
-<li>安装Pelican  <code>pip install pelican</code></li>
-<li>安装Markdown <code>pip install markdown</code></li>
+<li>Macintosh自带发音功能，进入Terminal，输入<code>say XXX</code>XXX为想说的内容，也可在<strong><em>系统偏好设置</em></strong>里的<strong><em>听写与语音</em></strong>设置发音选项。</li>
+<li>快捷键：<code>command + ,</code>键可查看软件的偏好设置。</li>
 </ol>
-<h2>3.搭建</h2>
-<p>创建文件夹</p>
-<div class="highlight"><pre>mkdir blog
-cd blog
-</pre></div>
+            </div><!-- /.entry-content -->
+            <div class="comments">
+              <h3>Comments</h3>
+              <div id="disqus_thread"></div>
+              <script type="text/javascript">
+                var disqus_identifier = "install-OSX.html";
+                (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://gnahceggithubio.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+              </script>
+            </div>
 
-
-<p>执行<code>pelican-quickstart</code>命令，将会提示博客的配置项，就算手抖选错，也可在<code>pelicanconf.py</code>文件中进行修改。</p>
-<p>命令执行后，出现pelican框架 ...</p> </div><!-- /.entry-content -->
-
-                                <div class="medium primary btn"><a href="/generate-blog-with-pelican.html" rel="bookmark" title="Permalink to 使用Pelican与Github Pages搭建博客">Read more <i class="icon-arrow-right"></i></a></div>
-
-
-
-                                <div class="row tag-row">
-                                        <span>Tagged as : </span>
-                                            <a class="danger label" href="/tag/pelican.html">Pelican</a>
-                                            <a class="danger label" href="/tag/python-blog-framework.html">Python blog framework</a>
-                                </div>
-
-
-
-                        </article></li>
-                </ol><!-- /#posts-list -->
 
         </div><!-- /.eleven.columns -->
-        
+
 <div class="three columns">
 
 <h4>Pages</h4>
@@ -188,7 +137,8 @@ cd blog
 
 </div> </div><!-- /.row -->
 
-</section><!-- /#content -->
+
+</section>
 
        </div><!-- /.row -->
     </div><!-- /.container -->

@@ -1,198 +1,104 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Ge" />
+        <meta name="copyright" content="Ge" />
 
-        <title>Ge's Blog</title>
-        <meta charset="utf-8" />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:card" content="summary">
 
-
-        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
-        <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
-
-        <link rel="stylesheet" type="text/css" href="/theme/gumby.css" />
-        <link rel="stylesheet" type="text/css" href="/theme/style.css" />
-        <link rel="stylesheet" type="text/css" href="/theme/pygment.css" />
-
-        <script src="/theme/js/libs/modernizr-2.6.2.min.js"></script>
-
-
-
-
-</head>
-
-<body id="index" class="home">
-
-
-    <div class="container">
-
-        <div class="row">
-
-          <header id="banner" class="body">
-                  <h1><a href="/">Ge's Blog <strong></strong></a></h1>
-          </header><!-- /#banner -->
-
-            <div id="navigation" class="navbar row">
-              <a href="#" gumby-trigger="#navigation &gt; ul" class="toggle"><i class="icon-menu"></i></a>
-             
-              <ul class="columns">
-                <li><a href="/">Home</a></li>
-
-                <li><a href="/pages/about.html">About</a></li>
-
-              </ul>
+<meta property="og:title" content="Ge&#39;s Blog"/>
+<meta name="twitter:title" content="Ge&#39;s Blog">
+<meta property="og:url" content="" />
+<meta property="og:site_name" content="Ge&#39;s Blog" />
+<meta property="og:article:author" content="Ge" />
+        <title>Ge&#39;s Blog
+</title>
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/theme/css/pygments.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="/theme/tipuesearch/tipuesearch.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="/theme/css/elegant.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="/theme/css/custom.css" media="screen">
+    </head>
+    <body>
+        <div id="content-sans-footer">
+        <div class="navbar navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="/"><span class=site-name>Ge's Blog</span></a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav pull-right top-menu">
+                            <li ><a href="">Home</a></li>
+                            <li ><a href="/pages/about.html">About</a></li>
+                            <li ><a href="/categories.html">Categories</a></li>
+                            <li ><a href="/tags.html">Tags</a></li>
+                            <li ><a href="/archives.html">Archives</a></li>
+                            <li><form class="navbar-search" action="/search.html" onsubmit="return validateForm(this.elements['q'].value);"> <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input"></form></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span1"></div>
+                <div class="span10">
+<div class="row-fluid">
 
-<section id="content">
-<h2>Articles in the Python category</h2>
-
-
-   <div class="row">
-
-
-        <div class="eleven columns">
-                 <ol id="post-list">
-                        <li><article class="hentry">
-                                <header> <h2 class="entry-title"><a href="/generate-blog-with-pelican.html" rel="bookmark" title="Permalink to 使用Pelican与Github Pages搭建博客">使用Pelican与Github Pages搭建博客</a></h2> </header>
-                                <footer class="post-info">
-                                    <abbr class="published" title="2015-03-12T14:29:00+08:00"> 四 12 三月 2015 </abbr>
-                                    <address class="vcard author">By 
-                                    <a class="url fn" href="/author/gc.html"> Gc</a>
-                                    </address>
-                                </footer><!-- /.post-info -->
-                                <div class="entry-content"> <h2>1.前言</h2>
-<p><strong>Pelican是一个由Python编写的静态页面生成器。</strong></p>
-<p>官方网站:<a href="http://blog.getpelican.com/"><em>Pelican</em></a></p>
-<h3>特点</h3>
-<div class="highlight"><pre>* 易部署
-* 可用reStructuredText、Markdown等格式进行编写。
-* 使用命令行界面生成页面
-</pre></div>
-
-
-<h3>为啥叫“Pelican”？</h3>
-<blockquote>
-<p>Pelican是<em>calepin</em>(在法语中意为“笔记本”)的同字母异序词。</p>
-</blockquote>
-<h2>2.下载安装</h2>
-<blockquote>
-<p>git</p>
-<p>Python</p>
-<p>pip</p>
-<p>Pelican</p>
-<p>markdown</p>
-</blockquote>
-<ol>
-<li>安装Pelican  <code>pip install pelican</code></li>
-<li>安装Markdown <code>pip install markdown</code></li>
-</ol>
-<h2>3.搭建</h2>
-<p>创建文件夹</p>
-<div class="highlight"><pre>mkdir blog
-cd blog
-</pre></div>
-
-
-<p>执行<code>pelican-quickstart</code>命令，将会提示博客的配置项，就算手抖选错，也可在<code>pelicanconf.py</code>文件中进行修改。</p>
-<p>命令执行后，出现pelican框架 ...</p> </div><!-- /.entry-content -->
-
-                                <div class="medium primary btn"><a href="/generate-blog-with-pelican.html" rel="bookmark" title="Permalink to 使用Pelican与Github Pages搭建博客">Read more <i class="icon-arrow-right"></i></a></div>
-
-
-
-                                <div class="row tag-row">
-                                        <span>Tagged as : </span>
-                                            <a class="danger label" href="/tag/pelican.html">Pelican</a>
-                                            <a class="danger label" href="/tag/python-blog-framework.html">Python blog framework</a>
-                                </div>
-
-
-
-                        </article></li>
-                </ol><!-- /#posts-list -->
-
-        </div><!-- /.eleven.columns -->
-        
-<div class="three columns">
-
-<h4>Pages</h4>
-
- <ul>
-      <li><a href="/pages/about.html">About</a></li>
-  </ul>
-
-<h4>Categories</h4>
-<ul>
-		<li><a href="/category/macintosh.html">Macintosh</a></li>
-		<li><a href="/category/python.html">Python</a></li>
-</ul>
-
-
-<h4>Tags</h4>
-	<ul>
-	    <li class="tag-4"><a href="/tag/mac.html">mac</a></li>
-	    <li class="tag-4"><a href="/tag/pelican.html">Pelican</a></li>
-	    <li class="tag-4"><a href="/tag/python-blog-framework.html">Python blog framework</a></li>
-</ul>
-
-
-<nav class="widget">
-  <h4>Social</h4>
-  <ul>
-    <li><a href="#">You can add links in your config file</a></li>
-    <li><a href="#">Another social link</a></li>
-  </ul>
-</nav>
-
-</div> </div><!-- /.row -->
-
-</section><!-- /#content -->
-
-       </div><!-- /.row -->
-    </div><!-- /.container -->
-
-
-       <div class="container.nopad bg">
-
-    
-        <footer id="credits" class="row">
-          <div class="seven columns left-center">
-
-                   <address id="about" class="vcard body">
-                    Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                    which takes great advantage of <a href="http://python.org">Python</a>.
-                    <br />
-                    Based on the <a target="_blank" href="http://gumbyframework.com">Gumby Framework</a>
-                    </address>
-          </div>
-
-
-          <div class="seven columns">
-            <div class="row">
-              <ul class="socbtns">
-
-
-
-
-
-              </ul>
-            </div>
-          </div>
-        </footer>
+    <div class="row-fluid">
 
     </div>
 
-
-<script type="text/javascript">
-    var disqus_shortname = 'gnahceggithubio';
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-</script>
-  <script src="/theme/js/libs/jquery-1.9.1.min.js"></script>
-  <script src="/theme/js/libs/gumby.min.js"></script>
-  <script src="/theme/js/plugins.js"></script>
-</body>
+    <div class="row-fluid">
+        <div class="span8 offset2">
+            <header>
+            <h1 id="recent-posts">Recent Posts <a id="allposts" href="/archives.html">all posts</a></h1>
+            </header>
+        <div class="recent-posts">
+            <article>
+                <a href="/generate-blog-with-pelican.html">使用Pelican与Github Pages搭建博客  </a>
+                <section>
+                    posted in
+                <a href="/categories.html#python-ref">Python</a>
+                <div class="recent-posts-time">
+                <time pubdate="pubdate" datetime="2015-03-12T14:29:00+08:00">四 12 三月 2015</time>
+                </div>
+                </section>
+            </article>
+        </div>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="span1"></div>
+            </div>
+        </div>
+        <div id="push"></div>
+    </div>
+<footer>
+<div id="footer">
+    <ul class="footer-content">
+        <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
+    </ul>
+</div>
+</footer>        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script>
+            function validateForm(query)
+            {
+                return (query.length > 0);
+            }
+        </script>
+    </body>
+    <!-- Theme: Elegant built for Pelican
+    License : http://oncrashreboot.com/pelican-elegant -->
 </html>

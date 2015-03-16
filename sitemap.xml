@@ -4,91 +4,91 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>/</loc>
-<lastmod>2015-03-16T13:23:40-00:00</lastmod>
+<loc>http://gnahceg.github.io/</loc>
+<lastmod>2015-03-16T13:50:29-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/archives.html</loc>
-<lastmod>2015-03-16T13:23:40-00:00</lastmod>
+<loc>http://gnahceg.github.io/archives.html</loc>
+<lastmod>2015-03-16T13:50:29-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tags.html</loc>
-<lastmod>2015-03-16T13:23:40-00:00</lastmod>
+<loc>http://gnahceg.github.io/tags.html</loc>
+<lastmod>2015-03-16T13:50:29-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/categories.html</loc>
-<lastmod>2015-03-16T13:23:40-00:00</lastmod>
+<loc>http://gnahceg.github.io/categories.html</loc>
+<lastmod>2015-03-16T13:50:29-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/pages/about.html</loc>
+<loc>http://gnahceg.github.io/pages/about.html</loc>
 <lastmod>2015-03-12T17:36:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/install-OSX.html</loc>
+<loc>http://gnahceg.github.io/install-OSX.html</loc>
 <lastmod>2015-03-12T19:29:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/generate-blog-with-pelican.html</loc>
+<loc>http://gnahceg.github.io/generate-blog-with-pelican.html</loc>
 <lastmod>2015-03-12T14:29:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/macintosh.html</loc>
+<loc>http://gnahceg.github.io/category/macintosh.html</loc>
 <lastmod>2015-03-12T19:29:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/python.html</loc>
+<loc>http://gnahceg.github.io/category/python.html</loc>
 <lastmod>2015-03-12T14:29:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/pelican.html</loc>
+<loc>http://gnahceg.github.io/tag/pelican.html</loc>
 <lastmod>2015-03-12T14:29:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/mac.html</loc>
+<loc>http://gnahceg.github.io/tag/mac.html</loc>
 <lastmod>2015-03-12T19:29:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/python-blog-framework.html</loc>
+<loc>http://gnahceg.github.io/tag/python-blog-framework.html</loc>
 <lastmod>2015-03-12T14:29:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/author/gc.html</loc>
+<loc>http://gnahceg.github.io/author/gc.html</loc>
 <lastmod>2015-03-12T19:29:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>

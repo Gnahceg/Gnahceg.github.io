@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://gnahceg.github.io/</loc>
-<lastmod>2015-03-16T17:58:35-00:00</lastmod>
+<lastmod>2015-03-16T18:02:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://gnahceg.github.io/archives.html</loc>
-<lastmod>2015-03-16T17:58:35-00:00</lastmod>
+<lastmod>2015-03-16T18:02:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://gnahceg.github.io/tags.html</loc>
-<lastmod>2015-03-16T17:58:35-00:00</lastmod>
+<lastmod>2015-03-16T18:02:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://gnahceg.github.io/categories.html</loc>
-<lastmod>2015-03-16T17:58:35-00:00</lastmod>
+<lastmod>2015-03-16T18:02:20-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -34,6 +34,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://gnahceg.github.io/pages/about.html</loc>
 <lastmod>2015-03-12T17:36:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://gnahceg.github.io/learn-http.html</loc>
+<lastmod>2015-03-16T17:53:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -49,6 +56,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <loc>http://gnahceg.github.io/generate-blog-with-pelican.html</loc>
 <lastmod>2015-03-12T14:29:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://gnahceg.github.io/category/learning.html</loc>
+<lastmod>2015-03-16T17:53:00+08:06</lastmod>
+<changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -81,6 +95,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://gnahceg.github.io/tag/http.html</loc>
+<lastmod>2015-03-16T17:53:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://gnahceg.github.io/tag/python-blog-framework.html</loc>
 <lastmod>2015-03-12T14:29:00+08:06</lastmod>
 <changefreq>daily</changefreq>
@@ -89,7 +110,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://gnahceg.github.io/author/gc.html</loc>
-<lastmod>2015-03-12T19:29:00+08:06</lastmod>
+<lastmod>2015-03-16T17:53:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
